@@ -3,13 +3,12 @@
 Refund Ploicy | Sapporo Medical Journal
 @endsection
 @section('content')
-<div class="container-fluid">
-    <div class="row pt-4">
-        <div class="col-12">
-            <header class="page-header">
-                <h2>Refund Policy</h2>
-            </header>
-            <div class="card-body">
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="mb-3 text-justify">
+                <h5 class="rounded-0 font-size-22">title</h5>
+                 <div class="card-body">
                 <div>
                     <p>Thanks for getting our online services at <a href="https://maejournal.com/">Sapporo Medical Journal</a> operated by Sapporo Medical Journal.
 
@@ -21,7 +20,9 @@ If you have any additional questions or would like to request a refund, feel fre
                 </div>
             </div>
         </div>
+        <div class="col-md-3 bg-light p-2">
+            @include('website.partials.sidebar_web')              
+        </div>
     </div>
 </div>
-
 @endsection

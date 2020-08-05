@@ -4,14 +4,13 @@ Contacts | Sapporo Medical Journal
 @endsection
 @section('content')
 
-<div class="container-fluid">
-    <div class="row d-flex justify-content-center mt-4 mb-4">
-        <div class="col-12">
-            <div class="card border-0">
-                <header class="page-header">
-                    <h2>User Feedback</h2>
-                </header>
-                <div class="row">
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="mb-3 text-justify">
+                <h5 class="rounded-0 font-size-22">User Feedback</h5>
+                <div class="card-body">
+                    <div class="row">
                     @if(session()->has('message'))
                         <div class="col-lg-12 col-xl-12 pl-5 pr-5">
                             <div class="card-box">
@@ -108,9 +107,14 @@ Contacts | Sapporo Medical Journal
 
                     </div>
                 </div>
+                </div>
             </div>
+        </div>
+        <div class="col-md-3 bg-light p-2">
+            @include('website.partials.sidebar_web')              
         </div>
     </div>
 </div>
+
 
 @endsection

@@ -1,29 +1,13 @@
 @extends('website.layouts.master') 
 @section('title', 'Paper Submission Documentation') 
 @section('content')
-<div class="row inner-margin-null">
-    <div class="col-md-12 main-content">
-        <div class="row inner-row mt-2">
-            <div class="col-md-12">
-                <header class="page-header">
-                    <h2>Paper Submission Documentation</h2>
-                </header>
-                <!-- <div class="bg-light p-1 ml-2 mr-3 d-flex justify-content-center" id="">
-                    <nav id="">
-                        <a class="badge badge-primary p-1" href="#Registration">Registration</a>
-                        <a class="badge badge-primary p-1" href="#Login">Login</a>
-                        <a class="badge badge-primary p-1" href="#Author-Dashboard">Author Dashboard</a>
-                        <a class="badge badge-primary p-1" href="#New-Submit">New Submit</a>
-                        <a class="badge badge-primary p-1" href="#Submit-Form">Submit Form</a>
-                        <a class="badge badge-primary p-1" href="#Accepted">Accepted</a>
-                        <a class="badge badge-primary p-1" href="#Payment-System-1">Payment System 1</a>
-                        <a class="badge badge-primary p-1" href="#Payment-System-2">Payment System 2</a>
-                    </nav>
-                </div> -->
-            </div>
-
-            <div class="col-md-12">
-                <div class="col-12">                        
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="mb-3 text-justify">
+                <h5 class="rounded-0 font-size-22">Paper Submission Documentation</h5>
+                <div class="card-body">
+                   <div class="col-12">                        
                     <section id="Registration">
                         <div class="">
                             <div class="title-header">
@@ -181,7 +165,13 @@
                             </div>
                     </section>
                 </div>
+                </div>
             </div>
         </div>
+        <div class="col-md-3 bg-light p-2">
+            @include('website.partials.sidebar_web')              
+        </div>
     </div>
+</div>
+
     @endsection

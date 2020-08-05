@@ -10776,7 +10776,7 @@ h5,
 }
 
 .wrap .bg-wrap:after {
-	position: absolute;
+	/*position: absolute;
 	top: 0;
 	left: -40px;
 	content: '';
@@ -10785,11 +10785,11 @@ h5,
 	border-style: solid;
 	border-width: 0 0 40px 40px;
 	border-color: transparent transparent #413c69 transparent;
-	z-index: -1
+	z-index: -1*/
 }
 
 .wrap .bg-wrap:before {
-	position: absolute;
+	/*position: absolute;
 	top: 0;
 	right: -40px;
 	content: '';
@@ -10798,7 +10798,7 @@ h5,
 	border-style: solid;
 	border-width: 40px 40px 0 0;
 	border-color: #413c69 transparent transparent transparent;
-	z-index: -1
+	z-index: -1*/
 }
 
 @media(max-width:991.98px) {
@@ -11589,8 +11589,8 @@ h5,
 }
 
 .btn.btn-primary {
-	background: #1ba12d;
-	border: 1px solid #1ba12d;
+	background: #413c69;
+	/*border: 1px solid #1ba12d;*/
 	color: #fff
 }
 

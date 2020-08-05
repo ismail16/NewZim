@@ -133,7 +133,7 @@ class PagesController extends Controller
     {
         $about_us = About::first();
         $contacts = Contact::all();
-        return view('website.pages.about_us', compact('about_us','pictures','contacts'));
+        return view('website.pages.about_us', compact('about_us','contacts'));
     }
 
     public function contact_us()

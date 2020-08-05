@@ -3,17 +3,13 @@
 User Feedback | Sapporo Medical Journal
 @endsection
 @section('content')
-<div class="container-fluid">
- <div class="row d-flex justify-content-center mt-4 mb-4">
-    <div class="col-12 ">
-        <div class="card border-0">
-            <header class="page-header">
-                <h2>User Feedback</h2>
-            </header>
-            <div class="container">
-                
-            
-            <div class="card-body pt-0">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="mb-3 text-justify">
+                <h5 class="rounded-0 font-size-22">User Feedback</h5>
+                <div class="card-body pt-0">
                 @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>
@@ -78,9 +74,11 @@ User Feedback | Sapporo Medical Journal
             </div>
             </div>
         </div>
+        <div class="col-md-3 bg-light p-2">
+            @include('website.partials.sidebar_web')              
+        </div>
     </div>
 </div>
-</div>
-</div>
+
 
 @endsection

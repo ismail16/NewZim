@@ -3,15 +3,13 @@
 @section('title', 'Search Article')
 
 @section('content')
-<div class="row inner-margin-null">
-    <div class="col-md-12 main-content">
-        <div class="row inner-row mt-2">
-            <div class="col-md-12">
-                <header class="page-header">
-                    <h2>Search Results</h2>
-                </header>
-            </div>
-            @if(count($articles)>0)
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="mb-3 text-justify">
+                <h5 class="rounded-0 font-size-22">Search Results</h5>
+                <div class="card-body">
+                    @if(count($articles)>0)
             @foreach($articles as $article)
                 <div class="col-md-12 mb-2">
                     <div class="card border-0">
@@ -80,7 +78,13 @@
                     </div>
                 </div>
             @endif
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 bg-light p-2">
+            @include('website.partials.sidebar_web')              
         </div>
     </div>
 </div>
+
 @endsection
