@@ -6,8 +6,7 @@ Information for Authors | Sapporo Medical Journal
 <div class="container">
     <div class="row">
         <div class="col-md-9">
-            <div class="mb-3 text-justify">
-                <h5 class="rounded-0 font-size-22">Authors</h5>
+            <div class="mb-3  mt-3 text-justify">
                 <div class="">
                     <p><strong>Information for Authors</strong></p>
                     <div style="padding-bottom: 6px; padding-left: 14px;">

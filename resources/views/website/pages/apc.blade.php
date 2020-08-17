@@ -6,9 +6,9 @@ Article Processing Charge | Sapporo Medical Journal
  <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <div class="_card mb-3 text-justify">
-                    <h5 class="_card-header rounded-0 font-size-22">Article Processing Charge</h5>
-                    <div class="card-body">
+                <div class="mb-3  mt-3 text-justify">
+                    <h5 class="font-size-22">Article Processing Charge</h5>
+                    <div class="card-body p-0">
                         <div>
                             @if($apc)
                             {{-- <p><strong>{{ $apc->apc_title }}</strong></p> --}}

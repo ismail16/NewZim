@@ -14,7 +14,7 @@
                         Volume - 54, Issue-07
                     </span>
                 </h5>
-                <a class="btn btn-block btn-primary" href="#">
+                <a class="btn btn-block btn-success" href="#">
                     Make a Submission
                 </a>
                 <div class="content">
@@ -74,21 +74,36 @@
                         @foreach($articles as $article)
                         <div class="col-md-12 services align-self-stretch px-4 ftco-animate">
                             <div class="d-block">
-                                <div class="card-body">
+                                <div class="card-body  p-0">
                                     <!-- <h3 class="heading">ORIGINAL ARTICLE</h3> -->
                                     <div class="media-body">
-                                        <strong>Title:</strong> <a href="">{{ $article->ptitle }}</a>
-                                        <p>Author: <span class="badge badge-light">Indonesia</span>
-                                            <span class="badge badge-light">Indonesia</span>
-                                            <span class="badge badge-light">Indonesia</span>
-                                            <span class="badge badge-light">Indonesia</span></p>
-                                            <p><strong>Abstract:</strong>  Long-term stroke risk factors may lead to inflammation of endothelial vessels characterized by migration of macrophages and T-lymphocytes in blood vessel walls by releasing Interleukin-18 (IL-18) cytokines and causing changes in Mean Platelet Volume (MPV) values. This study aims to determine the relationship between IL-18 and MPV levels with ischemic stroke event in Sanglah General Hospital Denpasar.
-                                                Methods: A matched-pair case-control study design was conducted in this study. The number of stroke and control samples were 33 people, respectively, and the dependent variable was an ischemic stroke, following MPV and IL-18 as dependent variables. Free T-2 sample test used to compare MPV in each group while the Mann-Whitney test used to compare the interleukin levels of the two groups. Data were analyzed using SPSS version 20 for Windows. <a href="" class="btn">See Full</a></p>
-                                            </div>
-
+                                        <div class="border p-2">
+                                            <strong>Title:</strong> 
+                                            <a onclick="view_count_submit('<?php echo $article->id;?>')" href="{{ route('single_article',$article->title_slug)}}">
+                                                {{ $article->ptitle }}
+                                            </a>
                                         </div>
-
+                                        <p class="border p-2  m-0">Author: 
+                                            <?php
+                                            $author_names = json_decode($article->author_name, true);
+                                            foreach ($author_names as $key => $author_name) {
+                                                ?>
+                                                <span class="badge badge-light">
+                                                     <?php if ($author_name != '') echo $author_name.","; ?>
+                                                </span>
+                                                <?php
+                                            };
+                                         ?>
+                                        </p>
+                                        <p class="border p-2"><strong>Abstract:</strong> 
+                                            {!! $article->abstract !!}
+                                            <a onclick="view_count_submit('<?php echo $article->id;?>')" href="{{ route('single_article',$article->title_slug)}}" class="btn">See Full</a>
+                                        </p>
                                     </div>
+
+                                </div>
+
+                                </div>
                                 </div>
                                 @endforeach
                                 <div class="col-md-12 d-flex justify-content-end">
